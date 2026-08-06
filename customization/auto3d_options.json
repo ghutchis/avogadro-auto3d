@@ -1,0 +1,23 @@
+{
+  "conformers": {
+    "type": "integer",
+    "label": "Conformers",
+    "default": 10,
+    "minimum": 1,
+    "maximum": 100,
+    "toolTip": "Number of low-energy conformers to keep (Auto3D 'k')"
+  },
+  "method": {
+    "type": "stringList",
+    "label": "NNP Method",
+    "default": 0,
+    "values": ["AIMNET", "ANI2x", "ANI2xt"],
+    "toolTip": "Neural network potential used to optimize and rank conformers"
+  },
+  "tautomers": {
+    "type": "boolean",
+    "label": "Enumerate tautomers",
+    "default": false,
+    "toolTip": "Also generate and rank tautomers. Stereochemistry from the input 3D structure is always preserved (stereoisomers are never enumerated)."
+  }
+}
