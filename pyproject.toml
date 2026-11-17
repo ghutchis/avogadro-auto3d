@@ -1,12 +1,12 @@
 [project]
 name = "avogadro-auto3d"
-version = "0.2.1"
+version = "0.2.2"
 description = "Auto3D neural-network-potential conformer-generation plugin for Avogadro 2"
 authors = [{name = "Geoff Hutchison", email = "geoff.hutchison@gmail.com"}]
 license = "BSD-3-Clause"
 requires-python = ">=3.11"
 # The [ani] extra pulls in torchani, needed for the ANI2x / ANI2xt methods.
-dependencies = ["Auto3D[ani]>=3.2.3", "rdkit>=2022.9.5", "torch>=2.8"]
+dependencies = ["Auto3D[ani]>=3.2.4", "rdkit>=2022.9.5", "torch>=2.8"]
 
 [project.scripts]
 avogadro-auto3d = "avogadro_auto3d:main"
